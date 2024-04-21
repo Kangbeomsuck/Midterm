@@ -1,0 +1,93 @@
+/* 기본 스타일 */
+body {
+  background-color: #000;
+  font-family: '나눔고딕', sans-serif;
+  color: #fff;
+  font-weight: bold;
+  text-align: center; /* 모든 텍스트를 가운데 정렬합니다. */
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+/* 프로필 영역 스타일 */
+.profile-container {
+  width: 80%; /* 프로필 영역 너비 조절 */
+  margin: 0 auto; /* 가운데 정렬 */
+  border: 2px solid #fff; /* 흰색 테두리 추가 */
+  padding: 20px; /* 안쪽 여백 추가 */
+  border-radius: 10px; /* 모서리 둥글게 처리 */
+  text-align: left; /* 텍스트 왼쪽 정렬 */
+}
+
+/* 소개 영역 스타일 */
+.intro-container {
+  display: flex; /* 사진과 정보를 나란히 배치 */
+  align-items: center; /* 수직 중앙 정렬 */
+}
+
+/* 프로필 사진 스타일 */
+.intro-image {
+  width: 30%; /* 사진 너비 조절 */
+  margin-right: 20px; /* 오른쪽 여백 추가 */
+}
+
+.intro-image img {
+  width: 100%; /* 이미지를 박스 너비에 맞게 채웁니다. */
+  height: auto; /* 높이 자동 조정합니다. */
+  border: 2px solid #fff; /* 흰색 테두리 추가합니다. */
+  border-radius: 10px; /* 모서리 둥글게 처리합니다. */
+}
+
+/* 개인 정보 스타일 */
+.intro-info {
+  font-size: 18px; /* 글꼴 크기 조절 */
+}
+
+/* 좋아하는 것/싫어하는 것 스타일 */
+.likes-dislikes {
+  display: flex; /* 좋아하는 것/싫어하는 것을 가로로 배치 */
+  justify-content: space-between; /* 좌우 여백 고르게 분배 */
+  margin-bottom: 10px; /* 아래 여백 추가 */
+}
+
+.likes-dislikes li {
+  list-style: none; /* 목록 기호 제거 */
+  margin-right: 20px; /* 오른쪽 여백 추가 */
+}
+
+/* 좌우명 스타일 */
+.motto {
+  font-size: 28px; /* 글꼴 크기 조절 */
+  margin-bottom: 20px; /* 아래 여백 추가 */
+}
+
+/* 사진 갤러리 스타일 */
+.photo-container {
+  display: flex;
+  flex-wrap: wrap; /* 여러 줄로 나열될 수 있도록 합니다. */
+  justify-content: center; /* 사진과 설명을 가운데 정렬합니다. */
+  margin: 0 20px; /* 양쪽 여백을 20px 추가합니다. */
+}
+
+.photo-wrapper {
+  width: 300px; /* 박스 너비를 300px로 설정합니다. */
+  margin: 10px; /* 박스 사이 여백을 10px 추가합니다. */
+  border: 1px solid #fff; /* 흰색 테두리 추가합니다. */
+  padding: 15px; /* 박스 안쪽 여백 추가합니다. */
+  position: relative; /* 설명을 상대적으로 배치할 수 있도록 합니다. */
+}
+
+.photo-wrapper img {
+  width: 100%; /* 이미지를 박스 너비에 맞게 채웁니다. */
+  height: auto; /* 높이 자동 조정합니다. */
+  margin-bottom: 10px; /* 이미지 아래 여백 추가합니다. */
+}
+
+.photo-wrapper p {
+  position: absolute; /* 설명을 절대적으로 배치합니다. */
+  bottom: 10px; /* 아래쪽에 배치합니다. */
+  left: 15px; /* 왼쪽에 배치합니다. */
+  width: calc(100% - 30px); /* 박스 너비에서 여백 제외한 너비를 계산합니다. */
+  color: #fff; /* 텍스트 색상을 
