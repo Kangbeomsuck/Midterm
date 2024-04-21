@@ -1,32 +1,100 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>32190043 강범석의 자기소개</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>32190043강범석 중간고사 과제</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body> 
-    <h1>나의 소개</h1>
+<body>
 
-    <section>
-        <h2>사진</h2>
-        <img src="나의 사진.jpg" alt="나의 사진">
-    </section>
+  <h1>강범석의 과거, 현재, 미래</h1>
 
-    <section>
-        <h2>자기소개</h2>
-        <p>여기에 나의 간단한 자기소개를 작성합니다.</p>
-    </section>
+  <section id="past">
+    <h2>과거</h2>
+    <div class="photo-container">
+      <div class="photo-wrapper">
+        <img src="과거사진1.jpg" alt="과거 사진 1">
+        <p>과거 사진 1에 대한 설명</p>
+      </div>
+      <div class="photo-wrapper">
+        <img src="과거사진2.jpg" alt="과거 사진 2">
+        <p>과거 사진 2에 대한 설명</p>
+      </div>
+    </div>
+    <p>과거에 대한 자세한 설명을 작성합니다.</p>
+  </section>
 
+  <section id="present">
+    <h2>현재</h2>
+    <div class="photo-container">
+      <div class="photo-wrapper">
+        <img src="현재사진1.jpg" alt="현재 사진 1">
+        <p>현재 사진 1에 대한 설명</p>
+      </div>
+      <div class="photo-wrapper">
+        <img src="현재사진2.jpg" alt="현재 사진 2">
+        <p>현재 사진 2에 대한 설명</p>
+      </div>
+    </div>
+    <p>지금은 26살 먹은 대학교 3학년 학생이다.
+      항상 피곤한 몸을 이끌고 대학을 다닌다. 
+      통학이 편도 2시간이기 때문이다...
+    </p>
+  </section>
+
+  <section id="future">
+    <h2>미래</h2>
+    <div class="photo-container">
+      <div class="photo-wrapper">
+        <img src="미래사진1.jpg" alt="미래 사진 1">
+        <p>미래 사진 1에 대한 설명</p>
+      </div>
+      <div class="photo-wrapper">
+        <img src="미래사진2.jpg" alt="미래 사진 2">
+        <p>미래 사진 2에 대한 설명</p>
+      </div>
+    </div>
+    <p>미래에 대한 자세한 설명을 작성합니다.</p>
+  </section>
 
 </body>
 </html>
 
+
+
 <style type="text/css">
-    body {
-    background-color: #000;
-    font-family: '나눔고딕', sans-serif;
-    color: #fff;
-    font-weight: bold;
-    }
-</style>
+/* style.css */
+
+body {
+  background-color: #000;
+  font-family: '나눔고딕', sans-serif;
+  color: #fff;
+  font-weight: bold;
+  text-align: center; /* 모든 텍스트를 가운데 정렬합니다. */
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.photo-container {
+  display: flex;
+  flex-wrap: wrap; /* 여러 줄로 나열될 수 있도록 합니다. */
+  justify-content: center; /* 사진과 설명을 가운데 정렬합니다. */
+  margin: 0 20px; /* 양쪽 여백을 20px 추가합니다. */
+}
+
+.photo-wrapper {
+  width: 300px; /* 박스 너비를 300px로 설정합니다. */
+  margin: 10px; /* 박스 사이 여백을 10px 추가합니다. */
+  border: 1px solid #fff; /* 흰색 테두리 추가합니다. */
+  padding: 15px; /* 박스 안쪽 여백 추가합니다. */
+  position: relative; /* 설명을 상대적으로 배치할 수 있도록 합니다. */
+}
+
+.photo-wrapper img {
+  width: 100%; /* 이미지를 박스 너비에 맞게 채웁니다. */
+  height: auto; /* 높이 자동 조정합니다. */
+  margin-bottom: 10px; /* 이미지 아래 여백 추가합니다. */
+}
